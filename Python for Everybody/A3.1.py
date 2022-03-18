@@ -7,14 +7,14 @@
 # You should use input to read a string and float() to convert the string to a number. 
 # Do not worry about error checking the user input - assume the user types numbers properly.
 
-hrs = input('Enter Hours: ')
-rate = input('Enter Rate: ')
+hrs = float(input('Enter Hours: '))
+rate = float(input('Enter Rate: '))
 
 if hrs > 40 :
     OtRate = rate * 1.5
     OtHrs = hrs - 40
-    hrs == 40
+    hrs = 40
 
-pay = float((hrs * rate) + (OtHrs * OtRate))
+pay = (hrs * rate) + (OtHrs * OtRate)
 
 print ('Pay: ', pay)
