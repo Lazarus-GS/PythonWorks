@@ -1,7 +1,8 @@
 hrs = float(input('Enter Hours: '))
 rate = float(input('Enter the Hourly Rate: '))
 
-def computepay():
+#calculate gross pay
+def computepay(hrs, rate):
     
     if hrs > 40 :
         OtRate = rate * 1.5
@@ -12,5 +13,4 @@ def computepay():
     pay = (hrs * rate) + (OtHrs * OtRate)
     return pay
 
-x = computepay()
-print ('Pay: ', x)
+print ('Pay: ', computepay(hrs, rate))
